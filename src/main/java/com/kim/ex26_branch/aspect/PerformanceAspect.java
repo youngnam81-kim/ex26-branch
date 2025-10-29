@@ -12,7 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 @Component
 public class PerformanceAspect {
 
-	@Around("execution(* com.kim.ex25_branch.service.*.*(..))")
+	@Around("execution(* com.kim.ex26_branch.service.*.*(..))")
 	public Object measureTime(ProceedingJoinPoint joinPoint) throws Throwable {
 		long startTime = System.currentTimeMillis(); // 시작 시간 기록
 

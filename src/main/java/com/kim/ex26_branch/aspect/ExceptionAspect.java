@@ -12,7 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 @Component
 public class ExceptionAspect {
 
-	@AfterThrowing(pointcut = "execution(* com.kim.ex25_branch.service.*.*(..))", throwing = "excep")
+	@AfterThrowing(pointcut = "execution(* com.kim.ex26_branch.service.*.*(..))", throwing = "excep")
 	public void logError(JoinPoint jp, Exception excep) {
 		log.info("##### 메서드중 오류 Before @AfterThrowing \n : {}, \n===== 오류상황 ===== \n : {} \n##### ERROR END #####", jp.getSignature(), excep.getMessage());
 	}
