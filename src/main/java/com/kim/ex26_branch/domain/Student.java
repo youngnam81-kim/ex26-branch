@@ -15,12 +15,14 @@ public class Student {
 	@NotNull
 	private Long id;
 	
-	@NotBlank(message = "안넣으면 안돼")
+	@NotBlank(message = "빈칸이면 안돼.")
 	private String name;
 	
+	@NotBlank(message = "빈칸이면 안돼.")
 	@Email(message = "이메일형식 아니면 안돼")
 	private String email;
 	
+	@NotNull
 	@Min(value=1, message="나이는 1부터시작 150이하")
 	private Integer age;
 	
